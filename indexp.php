@@ -19,6 +19,6 @@ echo <<<_TAIL1
 </html>
 _TAIL1;
     } else { 
-  header('location: http://mscidwd.bch.ed.ac.uk/your_id/complib.php');
+  header('location: http://mscidwd.bch.ed.ac.uk/s2059232/complib.php');
   }
 ?>
