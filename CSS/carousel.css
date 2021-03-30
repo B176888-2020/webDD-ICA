@@ -22,12 +22,13 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  display: none;
+  width: 0.5%;
+  background-color: #f0ad4e;
   background:transparent !important;
 }
 
 body::-webkit-scrollbar-thumb {
-  width: 10px;
+  width: 0.5%;
   background-color: #f0ad4e;
   outline: 4px solid #f0ad4e;
 }
@@ -771,7 +772,7 @@ list-group {
 -------------------------------------------------- */
 .mycontainer {
   position: relative;
-  width: 100%;
+  width: 90%;
   left: 5%;
   right: 5%;
   margin-top: 5%;
