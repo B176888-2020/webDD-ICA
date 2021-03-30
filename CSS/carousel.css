@@ -771,7 +771,7 @@ list-group {
 -------------------------------------------------- */
 .mycontainer {
   position: relative;
-  width: 85%;
+  width: 100%;
   left: 5%;
   right: 5%;
   margin-top: 5%;
