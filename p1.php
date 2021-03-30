@@ -76,7 +76,7 @@ if(isset($_POST['supplier']))
     }
     $_SESSION['supmask'] = $smask;
 }
-echo '<a>Currently selected Suppliers: </a>';
+echo '<p class="pstyle">Currently selected Suppliers: </p>';
 for($j = 0 ; $j < $rows ; ++$j)
 {
     if($sact[$j] == 1) {
