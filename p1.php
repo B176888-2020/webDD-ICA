@@ -95,7 +95,7 @@ for($j = 0 ; $j < $rows ; ++$j)
 }
 // Submission Button
 echo <<<_SUBMIT1
- <input class="submit hpstyle" value="OK" /></input>
+ <div class="text-center"><input class="btn btn-default hpstyle" role="button" type="submit" value="Select and Submit" /></input></div>
 </pre></form>
 _SUBMIT1;
 

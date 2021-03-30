@@ -255,6 +255,16 @@ p {
   text-shadow: #f0ad4e 0.1em 0.1em 0.2em !important;
 }
 
+/* Previous and Next Buttons-------------------------------------------------- */
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #4CAF50;
+  color: white;
+}
 
 /* index special
 -------------------------------------------------- */
