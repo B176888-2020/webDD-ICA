@@ -31,11 +31,7 @@ echo <<<_CONTENTS1
       <div>
         <h1 class="">Future Work - Improvement</h1>
         <hr class="col-md-12">
-        <p> In evaluation of the valuable statistics we obtained from our previous <strong>modelling</strong>, <strong>experiments</strong> and <strong>human practice integrations</strong>, we have thought deeper into the possibility of extending our project to an upper level and made plans for future researches and applications. </p>
-        <h2>“Plans for the drug administration mode”</h2>
-        <p>Both from our human practice work and further investigations into finding a more applicable method in drug delivery, we decided to alter our original drug dosing methods using enema or suppository and recommended a more promising and effective mode, hydrogel, in our drug administration. We compared the advantages and disadvantages of different kinds of drug dosing modes literatures-based, as shown in the table. </p>
-        <p>As we can see, although suppository and enema can partly achieve local drug delivery, the administration time and area are too limited. Intestinal stents can meet the needs of long-term administration, but it is easily shifted and needs to be replaced regularly. In light of this, we recommended a recently emerged hydrogel-based drug delivery system, which relies on a physically and chemically crosslinked hydrogel to stably release drugs if it’s activated by particular molecules <sup>[3]</sup>. Although this method is still at experimental stage, its high biocompatibility, convenience and high efficiency make us more convinced that it will eventually be applied clinically. Therefore, we intended to test our system along with this drug dosing method in future verification examinations.</p>
-        
+        <h2>“Plans for the drug administration mode”</h2> 
 _CONTENTS1;
 
 
@@ -99,7 +95,7 @@ for($j = 0 ; $j < $rows ; ++$j)
 }
 // Submission Button
 echo <<<_SUBMIT1
- <div class="text-center"><a class="btn btn-default hpstyle" role="button"><input type="submit" value="OK" /></a></div>
+ <div class="text-center"><input class="submit btn btn-default hpstyle" role="button" value="OK" /></input></div>
 </pre></form>
 _SUBMIT1;
 
