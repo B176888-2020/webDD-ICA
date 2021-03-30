@@ -22,7 +22,7 @@ include 'menuf.php';
 
 echo <<<_CONTENT1
 <div class="mycontainer" id="mycontentcon">
-  <div class="row">
+  <div class="row1">
 
     <div class="col-md-9" id="mycontent">
       <div>
