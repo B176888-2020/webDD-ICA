@@ -10,15 +10,16 @@ echo<<<_HEAD1
     <!-- Define the Encoding system -->
     <meta charset="utf-8">
     <!-- Bootstrap Core CSS -->
-    <link href="./CSS/bootstrap.css" rel="stylesheet">
+    <link href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/CSS/bootstrap.css" rel="stylesheet">
     <!-- Customise CSS -->
-    <link href="./CSS/bootstrap.css" rel="stylesheet">
+    <link href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/CSS/carousel.css" rel="stylesheet">
 </head>
 <body>
 _HEAD1;
 
 // Nav Bar
 include 'menuf.php';
+
 
 // Server and Databases
 $db_server = mysql_connect($db_hostname,$db_username,$db_password);
@@ -76,10 +77,24 @@ if(isset($_POST['supplier']))
         echo'"/>';
 	echo"\n";
       }
+
+
+include 'footer.php';
+
+
 echo <<<_TAIL1
  <input type="submit" value="OK" />
 </pre></form>
+
+<!-- ================ Bootstrap Core JavaScript ================ -->
+<script src="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/JS/jquery.min.js"></script>
+<!-- <script src="../carousel/js/jquery.js"></script> -->
+<script src="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/JS/bootstrap.js"></script>
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<script src="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/JS/holder.min.js"></script>
+
 </body>
 </html>
 _TAIL1;
+
 ?>
