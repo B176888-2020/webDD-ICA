@@ -15,7 +15,7 @@ echo <<<_FOOTER
 
         <p style="text-align: center;">
           <a style="color: #ffffff; font-size: 20px">
-            <a style="color: #f9d26b">Student Number:</a></a><a> s2059232 or B176888 </a>
+            <a style="color: #f9d26b">Student Number:</a></a> s2059232 or B176888
         </p>
 
         <p style="text-align: center;">
