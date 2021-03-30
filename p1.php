@@ -23,32 +23,6 @@ include 'menuf.php';
 echo <<<_CONTENT1
 <div class="mycontainer" id="mycontentcon">
   <div class="row">
-    <!--SideBar-->
-    <div class="col-md-2">
-      <div class="list-group navbar" id="sidebar">
-        <ul class="nav mynav" data-spy="affix" data-offset-top="0px">
-          <li><a href="#t" class="list-group-item" style="
-          height: 40px;
-          text-align: center;
-          vertical-align: center;
-          border-top: 7px solid #f0ad4e !important;
-          border-left: 5px solid #f0ad4e !important;
-          border-right: 3px solid #f0ad4e !important;
-          padding-top: 0px;
-          padding-bottom: 0px;
-          padding-left: 0 !important;
-          padding-right: 0 !important;">
-            <div class="progress-container">
-              <div class="progress-bar" id="myBar" >
-                <span class="progress-value">Future Work</span>
-              </div>
-            </div>
-          </a>
-          </li>
-
-        </ul>
-      </div>
-    </div>
 
     <div class="col-md-9" id="mycontent">
       <div>
@@ -146,7 +120,7 @@ echo <<<_SUBMIT1
 _SUBMIT1;
 
 // Roll Up Button
-include 'RollButton.php';
+include 'rollbutton.php';
 
 // Footer
 include 'footer.php';

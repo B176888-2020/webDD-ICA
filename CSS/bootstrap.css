@@ -274,14 +274,14 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('./fonts/glyphicons-halflings-regularsysu.eot');
-  src: url('./fonts/glyphicons-halflings-regularsysu.eot?#iefix')
+  src: url('http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/fonts/glyphicons-halflings-regularsysu.eot');
+  src: url('http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/fonts/glyphicons-halflings-regularsysu.eot?#iefix')
   format('embedded-opentype'),
-  url('./fonts/glyphicons-halflings-regularsysuwoff.woff')
+  url('http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/fonts/glyphicons-halflings-regularsysuwoff.woff')
   format('woff'),
-  url('./fonts/glyphicons-halflings-regularsysuttf.ttf')
+  url('http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/fonts/glyphicons-halflings-regularsysuttf.ttf')
   format('truetype'),
-  url('./fonts/glyphicons-halflings-regularsysusvg.svg#glyphicons_halflingsregular')
+  url('http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/fonts/glyphicons-halflings-regularsysusvg.svg#glyphicons_halflingsregular')
   format('svg');
 }
 .glyphicon {
