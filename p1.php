@@ -79,13 +79,19 @@ if(isset($_POST['supplier']))
       }
 
 
-include 'footer.php';
 
 
-echo <<<_TAIL1
+// Submission Button
+echo <<<_SUBMIT1
  <input type="submit" value="OK" />
 </pre></form>
+_SUBMIT1;
 
+// Footer
+include 'footer.php';
+
+// Tail for the HTML
+echo <<<_TAIL1
 <!-- ================ Bootstrap Core JavaScript ================ -->
 <script src="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/JS/jquery.min.js"></script>
 <!-- <script src="../carousel/js/jquery.js"></script> -->
