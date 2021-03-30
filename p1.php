@@ -35,8 +35,7 @@ echo <<<_CONTENTS1
         <h2>“Plans for the drug administration mode”</h2>
         <p>Both from our human practice work and further investigations into finding a more applicable method in drug delivery, we decided to alter our original drug dosing methods using enema or suppository and recommended a more promising and effective mode, hydrogel, in our drug administration. We compared the advantages and disadvantages of different kinds of drug dosing modes literatures-based, as shown in the table. </p>
         <p>As we can see, although suppository and enema can partly achieve local drug delivery, the administration time and area are too limited. Intestinal stents can meet the needs of long-term administration, but it is easily shifted and needs to be replaced regularly. In light of this, we recommended a recently emerged hydrogel-based drug delivery system, which relies on a physically and chemically crosslinked hydrogel to stably release drugs if it’s activated by particular molecules <sup>[3]</sup>. Although this method is still at experimental stage, its high biocompatibility, convenience and high efficiency make us more convinced that it will eventually be applied clinically. Therefore, we intended to test our system along with this drug dosing method in future verification examinations.</p>
-        <p>&nbsp;</p>
-        <img src="https://2019.igem.org/wiki/images/1/1f/T--SYSU-CHINA--FutureW.jpg" style="width:80%; position: relative; margin-left: 10%; margin-right: 10%;">
+        
 _CONTENTS1;
 
 
@@ -98,10 +97,15 @@ for($j = 0 ; $j < $rows ; ++$j)
     echo'"/>';
     echo"\n";
 }
-
+// Submission Button
+echo <<<_SUBMIT1
+ <div class="text-center"><a class="btn btn-default hpstyle" role="button"><input type="submit" value="OK" /></a></div>
+</pre></form>
+_SUBMIT1;
 
 
 echo <<<_CONTENTE1
+    <p>&nbsp;</p>
       <h3>References</h3>
         <p>[1] Sepantafar, Mohammadmajid, et al. “Engineered Hydrogels in Cancer Therapy and Diagnosis.” Trends in Biotechnology 35.11(2017).</p>
         <p>[2] Park, Semi , et al. "Benefits of Recurrent Colonic Stent Insertion in a Patient with Advanced Gastric Cancer with Carcinomatosis Causing Colonic Obstruction." Yonsei Medical Journal 50.2(2009).</p>
@@ -115,13 +119,6 @@ echo <<<_CONTENTE1
 </div>
 </div>
 _CONTENTE1;
-
-
-// Submission Button
-echo <<<_SUBMIT1
- <input type="submit" value="OK" />
-</pre></form>
-_SUBMIT1;
 
 // Roll Up Button
 include 'rollbutton.php';
