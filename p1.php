@@ -84,7 +84,7 @@ for($j = 0 ; $j < $rows ; ++$j)
         echo " ";
     }
 }
-echo  '<br><pre> <form action="p1.php" method="post">';
+echo  '<br><pre style="width: 25%;"><form action="p1.php" method="post">';
 for($j = 0 ; $j < $rows ; ++$j)
 {
     echo $snm[$j];
