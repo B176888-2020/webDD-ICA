@@ -3,21 +3,21 @@ echo <<<_MENU1
    Your options are <br>
     <table width ="70%" border="0" cellspacing="0" align="center"> <tr>
    <td bgcolor="#DCEFFE"><div align="center">
-    <a href="http://mscidwd.bch.ed.ac.uk/s2059232/p1.php"> Select Suppliers </a>
+    <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p1.php"> Select Suppliers </a>
     </div></td>
    <td bgcolor="#DCEFFE"><div align="center">
-    <a href="http://mscidwd.bch.ed.ac.uk/s2059232/p2.php"> Search Compounds </a>
-    </div></td>
-   <td bgcolor="#DCEFFE"><div align="center">
-   <td bgcolor="#DCEFFE"><div align="center">
-    <a href="http://mscidwd.bch.ed.ac.uk/s2059232/p3.php"> Stats </a>
+    <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p2.php"> Search Compounds </a>
     </div></td>
    <td bgcolor="#DCEFFE"><div align="center">
    <td bgcolor="#DCEFFE"><div align="center">
-    <a href="http://mscidwd.bch.ed.ac.uk/s2059232/p4.php"> Correlations </a>
+    <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p3.php"> Stats </a>
     </div></td>
    <td bgcolor="#DCEFFE"><div align="center">
-    <a href="http://mscidwd.bch.ed.ac.uk/s2059232/p5.php"> Exit </a>
+   <td bgcolor="#DCEFFE"><div align="center">
+    <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p4.php"> Correlations </a>
+    </div></td>
+   <td bgcolor="#DCEFFE"><div align="center">
+    <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p5.php"> Exit </a>
     </div></td>
     </tr></table>
 _MENU1;
