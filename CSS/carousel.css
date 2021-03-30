@@ -24,7 +24,6 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-track {
   width: 0.5%;
   background-color: #f0ad4e;
-  background:transparent !important;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -773,7 +772,7 @@ list-group {
 .mycontainer {
   position: relative;
   width: 90%;
-  left: 5%;
+  left: 10%;
   right: 5%;
   margin-top: 5%;
   margin-bottom: 1% !important;
