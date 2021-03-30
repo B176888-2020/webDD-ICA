@@ -15,12 +15,12 @@ echo <<<_FOOTER
 
         <p style="text-align: center;">
           <a href="#" style="color: #ffffff; font-size: 20px">
-            <a style="color: #f9d26b">Student Number:</a> s2059232 </a>
+            <a style="color: #f9d26b">Student Number:</a> s2059232 or B176888 </a>
         </p>
 
         <p style="text-align: center;">
           <a href="#" style="color: #ffffff; font-size: 20px;">
-            <a style="color: #f9d26b">:</a> +86-20-84112828</a>
+            <a href="https://github.com/B176888-2020/webDD-ICA" style="color: #f9d26b">GitHub:</a> https://github.com/B176888-2020/webDD-ICA </a>
         </p>
 
       </div>
