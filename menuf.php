@@ -23,10 +23,10 @@ echo <<<_MENU1
     </tr></table>
 -->
 
-<!-- NAVBAR -->
+<!-- Nav bar -->
 <div class="navbar-wrapper">
   <div class="container">
-
+    <!-- Nav bar head and mehod-->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container" style="padding-left: 0 !important;">
         <div class="navbar-header" style="width:300px; height: 50px; padding-left: 15px;">
@@ -37,17 +37,77 @@ echo <<<_MENU1
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p1.php">
-            <img src="http://2019.igem.org/wiki/images/1/1f/T--SYSU-CHINA--title0.jpg" alt="logo"
-                 style="left:30px; width: 300px; height: 50px; box-shadow: none;">
+            webDD 
           </a>
         </div>
 
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right .navbar-fixed-top">
-            <!-- TEAM -->
+            <!-- Nav Bar objects -->
+            <!-- Select the suppliers -->
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p1.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Select Suppliers
+                <span class="caret" style="color: #FFD465;"></span>
+              </a>
+              <ul class="dropdown-menu" style="min-width:100%;">
+                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p4.php">P4</a></li>
+                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p5.php">P5</a></li>
+              </ul>
+            </li>
+            
+            <!-- Search compounds -->
+            <li class="dropdown">
+              <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p2.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Compounds
+                <span class="caret" style="color: #FFD465;"></span>
+              </a>
+              <ul class="dropdown-menu" style="min-width:100%;">
+                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p4.php">P4</a></li>
+                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p5.php">P5</a></li>
+              </ul>
+            </li>
+            
+            <!-- Show statistics -->
+            <li class="dropdown">
+              <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p3.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Statistics
+                <span class="caret" style="color: #FFD465;"></span>
+              </a>
+              <ul class="dropdown-menu" style="min-width:100%;">
+                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p4.php">P4</a></li>
+                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p5.php">P5</a></li>
+              </ul>
+            </li>
+            
+            <!-- Correlations methods -->
+            <li class="dropdown">
+              <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p4.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Correlations
+                <span class="caret" style="color: #FFD465;"></span>
+              </a>
+              <ul class="dropdown-menu" style="min-width:100%;">
+                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p4.php">P4</a></li>
+                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p5.php">P5</a></li>
+              </ul>
+            </li>
+            
+            <!-- Documentation and help pages -->
+            <li class="dropdown">
+              <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/help.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                 Documentation
+                <span class="caret" style="color: #FFD465;"></span>
+              </a>
+              <ul class="dropdown-menu" style="min-width:100%;">
+                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p4.php">P4</a></li>
+                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p5.php">P5</a></li>
+              </ul>
+            </li>
+            
+            <!-- Exit the web application -->
+            <li class="dropdown">
+              <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p1.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Exit
                 <span class="caret" style="color: #FFD465;"></span>
               </a>
               <ul class="dropdown-menu" style="min-width:100%;">
