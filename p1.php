@@ -76,14 +76,17 @@ if(isset($_POST['supplier']))
     }
     $_SESSION['supmask'] = $smask;
 }
-echo '<p class="pstyle">Currently selected Suppliers: </p>';
+
+echo '<p class="pstyle">Currently selected Suppliers: ';
 for($j = 0 ; $j < $rows ; ++$j)
 {
     if($sact[$j] == 1) {
         echo $snm[$j] ;
-        echo " ";
+        echo ", ";
     }
 }
+echo '</p>';
+
 echo  '<br><pre style="width: 25%;"><form action="p1.php" method="post">';
 for($j = 0 ; $j < $rows ; ++$j)
 {
