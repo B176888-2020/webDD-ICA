@@ -27,10 +27,6 @@ echo <<<_FOOTER
       <!--First column-->
       <div class="col-md-3" style="width:400px; float: right; margin-top: 3%">
 
-        <div class="row1" style="width: 400px;">
-          <img src="https://2019.igem.org/wiki/images/0/0d/T--SYSU-CHINA--sysulogo2.jpg" style="float:left; width: 65px; height: 65px; box-shadow: none;">
-        </div>
-
       </div>
       <!--/.Fourth column-->
     </div>

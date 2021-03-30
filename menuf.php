@@ -36,7 +36,7 @@ echo <<<_MENU1
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://2019.igem.org/Team:SYSU-CHINA">
+          <a class="navbar-brand" href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p1.php">
             <img src="http://2019.igem.org/wiki/images/1/1f/T--SYSU-CHINA--title0.jpg" alt="logo"
                  style="left:30px; width: 300px; height: 50px; box-shadow: none;">
           </a>
@@ -65,13 +65,5 @@ echo <<<_MENU1
   </div>
 </div>
 _MENU1;
-
-echo <<<_RollUpButton
-<div class="scroll-top-wrapper ">
-	<span class="scroll-top-inner">
-		<span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
-	</span>
-</div>
-_RollUpButton;
 
 ?>

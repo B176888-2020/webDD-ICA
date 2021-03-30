@@ -79,13 +79,14 @@ if(isset($_POST['supplier']))
       }
 
 
-
-
 // Submission Button
 echo <<<_SUBMIT1
  <input type="submit" value="OK" />
 </pre></form>
 _SUBMIT1;
+
+// Roll Up Button
+include 'RollButton.php';
 
 // Footer
 include 'footer.php';
