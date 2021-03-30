@@ -14,13 +14,13 @@ echo <<<_FOOTER
         <hr class="col-md-14" style="color: #f9d26b; margin-top: 1px; margin-bottom: 5px;">
 
         <p style="text-align: center;">
-          <a href="#" style="color: #ffffff; font-size: 20px">
-            <a style="color: #f9d26b">Student Number:</a> s2059232 or B176888 </a>
+          <a style="color: #ffffff; font-size: 20px">
+            <a style="color: #f9d26b">Student Number:</a></a><a> s2059232 or B176888 </a>
         </p>
 
         <p style="text-align: center;">
-          <a href="#" style="color: #ffffff; font-size: 20px;">
-            <a href="https://github.com/B176888-2020/webDD-ICA" style="color: #f9d26b">GitHub:</a> https://github.com/B176888-2020/webDD-ICA </a>
+          <a style="color: #ffffff; font-size: 20px;">
+            <a style="color: #f9d26b">GitHub:</a> </a> <a href="https://github.com/B176888-2020/webDD-ICA">https://github.com/B176888-2020/webDD-ICA </a>
         </p>
 
       </div>
