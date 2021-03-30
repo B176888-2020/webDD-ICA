@@ -52,7 +52,7 @@ echo <<<_CONTENT1
 
     <div class="col-md-9" id="mycontent">
       <div>
-        <h1 id="t" class="">Future Work - Improvement</h1>
+        <h1 class="">Future Work - Improvement</h1>
         <hr class="col-md-12">
         <p> In evaluation of the valuable statistics we obtained from our previous <strong>modelling</strong>, <strong>experiments</strong> and <strong>human practice integrations</strong>, we have thought deeper into the possibility of extending our project to an upper level and made plans for future researches and applications. </p>
         <h2>“Plans for the drug administration mode”</h2>
