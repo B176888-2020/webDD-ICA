@@ -36,8 +36,8 @@ echo <<<_MENU1
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p1.php">
-            webDD 
+          <a class="navbar-brand" href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p1.php" style=" text-align: center; font-size: 16px; font-family: sans-serif;">
+            IDWD-ICA 
           </a>
         </div>
 
@@ -47,7 +47,7 @@ echo <<<_MENU1
             <!-- Select the suppliers -->
             <li class="dropdown">
               <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p1.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                Select Suppliers
+                Suppliers
                 <span class="caret" style="color: #FFD465;"></span>
               </a>
               <ul class="dropdown-menu" style="min-width:100%;">
@@ -95,7 +95,7 @@ echo <<<_MENU1
             <!-- Documentation and help pages -->
             <li class="dropdown">
               <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/help.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                Documentation
+                Documents
                 <span class="caret" style="color: #FFD465;"></span>
               </a>
               <ul class="dropdown-menu" style="min-width:100%;">
