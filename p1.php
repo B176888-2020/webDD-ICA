@@ -1,4 +1,8 @@
 <?php
+
+
+// --------------- The Shared Part For All Pages: Navbar and HEAD information --------------- //
+// Start the page and ensure the login and redirect method.
 session_start();
 require_once 'login.php';
 include 'redir.php';
@@ -22,7 +26,10 @@ _HEAD1;
 // Nav Bar
 include 'menuf.php';
 
-// Main Content
+// --------------- The Shared Part For All Pages: Navbar and HEAD information  --------------- //
+
+// --------------- Features for Different Pages: Select Suppliers --------------- //
+// Main Content 1
 echo <<<_CONTENTS1
 <div class="mycontainer" id="mycontentcon">
   <div class="row">
@@ -77,7 +84,7 @@ if(isset($_POST['supplier']))
     $_SESSION['supmask'] = $smask;
 }
 
-echo '<p class="pstyle">Currently selected Suppliers: ';
+echo '<p class="pstyle" sytle="color: #FFD465;"> <strong> Currently selected Suppliers: </strong>';
 for($j = 0 ; $j < $rows ; ++$j)
 {
     if($sact[$j] == 1) {
@@ -102,7 +109,7 @@ echo <<<_SUBMIT1
 </pre></form>
 _SUBMIT1;
 
-
+// Main Content 2
 echo <<<_CONTENTE1
     <p>&nbsp;</p>
       <h3>References</h3>
@@ -119,6 +126,9 @@ echo <<<_CONTENTE1
 </div>
 _CONTENTE1;
 
+// --------------- Features for Different Pages --------------- //
+
+// --------------- The Shared Part For All Pages: Roll up button, Footer and JavaScirpt Files --------------- //
 // Roll Up Button
 include 'rollbutton.php';
 
@@ -127,7 +137,7 @@ include 'footer.php';
 
 // Tail for the HTML
 echo <<<_TAIL1
-<!-- ================ Bootstrap Core JavaScript ================ -->
+<!-- --------------- Bootstrap Core JavaScript --------------- -->
 <script src="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/JS/jquery.min.js"></script>
 <!-- <script src="../carousel/js/jquery.js"></script> -->
 <script src="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/JS/bootstrap.js"></script>
@@ -137,5 +147,7 @@ echo <<<_TAIL1
 </body>
 </html>
 _TAIL1;
+
+// --------------- The Shared Part For All Pages: Roll up button, Footer and JavaScirpt Files --------------- //
 
 ?>
