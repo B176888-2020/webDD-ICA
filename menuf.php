@@ -37,7 +37,7 @@ echo <<<_MENU1
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p1.php" 
-          style="vertical-align: middle; color: #FFD465; text-align: center; font-size: 30px; font-family: sans-serif;">
+          style="padding: 5%; color: #FFD465; text-align: center; font-size: 30px; font-family: sans-serif;">
             IDWD-ICA 
           </a>
         </div>
