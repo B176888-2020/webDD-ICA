@@ -107,7 +107,7 @@ echo <<<_MENU1
             
             <!-- Exit the web application -->
             <li class="dropdown">
-              <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p5.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p5.php" class="dropdown-toggle">
                 Exit
               </a>
             </li>
