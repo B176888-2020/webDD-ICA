@@ -90,13 +90,12 @@ if(isset($_POST['tgval']) && isset($_POST[‘tgvalb’]))
 echo '<form action="p4.php" method="post"><pre>';
 for($j = 0 ; $j <sizeof($dbfs) ; ++$j) {
     if($j == 0) {
-        printf(' %15s <input type="radio" name="tgval" value="%s" checked"/> %15s <input type="radio" name="tgval" value="%s" checked"/>', $nms[$j],$dbfs[$j],$nms[$j],$dbfs[$j]);
+        printf(' %15s <input type="radio" name="tgval" value="%s" checked"/> %15s <input type="radio" name="tgvalb" value="%s" checked"/>',$nms[$j],$dbfs[$j],$nms[$j],$dbfs[$j]);
     } else {
-        printf(' %15s <input type="radio" name="tgval" value="%s""/> %15s <input type="radio" name="tgval" value="%s""/>', $nms[$j],$dbfs[$j],$nms[$j],$dbfs[$j]);
+        printf(' %15s <input type="radio" name="tgval" value="%s"/>  %15s <input type="radio" name="tgvalb" value="%s"/>',$nms[$j],$dbfs[$j],$nms[$j],$dbfs[$j]);
     }
     echo "\n";
 }
-
 echo '<input type="submit" value="OK" />';
 echo '</pre></form>';
 
