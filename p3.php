@@ -43,59 +43,45 @@ _CONTENTS1;
 $dbfs = array("natm","ncar","nnit","noxy","nsul","ncycl","nhdon","nhacc","nrotb","mw","TPSA","XLogP");
 $nms = array("n atoms","n carbons","n nitrogens","n oxygens","n sulphurs","n cycles","n H donors","n H acceptors","n rot bonds","mol wt","TPSA","XLogP");
 
-if(isset($_POST['tgval'])) 
-   {
-     $chosen = 0;
-     $tgval = $_POST['tgval'];
-     for($j = 0 ; $j <sizeof($dbfs) ; ++$j) {
-       if(strcmp($dbfs[$j],$tgval) == 0) $chosen = $j; 
-     } 
-     printf(" Statistics for %s (%s)<br />\n",$dbfs[$chosen],$nms[$chosen]);
-     //Your mysql and statistics calculation goes here
-     $db_server = mysql_connect($db_hostname,$db_username,$db_password);
-     if(!$db_server) die("Unable to connect to database: " . mysql_error());
-     mysql_select_db($db_database,$db_server) or die ("Unable to select database: " . mysql_error());
-
-     // Statistics part
-     $query = sprintf("select AVG(%s), STD(%s) from Compounds",$dbfs[$chosen],$dbfs[$chosen]);
-     $result = mysql_query($query);
-     if(!$result) die("unable to process query: " . mysql_error());
-     $row = mysql_fetch_row($result);
-
-     printf(" Average %f  Standard Dev %f <br />\n",$row[0],$row[1]);
-
-     // Figure part
-     $query = "select * from Manufacturers";
-     $result = mysql_query($query);
-     if(!$result) die("unable to process query: " . mysql_error());
-     $rows = mysql_num_rows($result);
-
-     $smask = $_SESSION['supmask'];
-     $firstmn = False;
-     $mansel = "(";
-     for($j = 0 ; $j < $rows ; ++$j) {
-       $row = mysql_fetch_row($result);
-       $sid[$j] = $row[0];
-       $snm[$j] = $row[1];
-       $sact[$j] = 0;
-       $tvl = 1 << ($sid[$j] - 1);
-       if($tvl == ($tvl & $smask)) {
-         $sact[$j] = 1;
-         if($firstmn) $mansel = $mansel." or ";
-         $firstmn = True;
-         $mansel = $mansel." (ManuID = ".$sid[$j].")";
-       }
-     }
-     $mansel = $mansel.")";
-     $comtodo = "./histog.py ".$dbfs[$chosen]." \"".$nms[$chosen]."\" \"".$mansel."\"";
-     $output = base64_encode(shell_exec($comtodo));
-
-     echo <<<_imgput
+if(isset($_POST['tgval']))
+{
+$chosen = 0;
+$tgval = $_POST['tgval'];
+for($j = 0 ; $j <sizeof($dbfs) ; ++$j) {
+  if(strcmp($dbfs[$j],$tgval) == 0) $chosen = $j;
+}
+$db_server = mysql_connect($db_hostname,$db_username,$db_password);
+if(!$db_server) die("Unable to connect to database: " . mysql_error());
+mysql_select_db($db_database,$db_server) or die ("Unable to select database: " . mysql_error());
+$query = "select * from Manufacturers";
+$result = mysql_query($query);
+if(!$result) die("unable to process query: " . mysql_error());
+$rows = mysql_num_rows($result);
+  $smask = $_SESSION['supmask'];
+  $firstmn = False;
+  $mansel = "(";
+  for($j = 0 ; $j < $rows ; ++$j) {
+    $row = mysql_fetch_row($result);
+    $sid[$j] = $row[0];
+    $snm[$j] = $row[1];
+    $sact[$j] = 0;
+    $tvl = 1 << ($sid[$j] - 1);
+    if($tvl == ($tvl & $smask)) {
+      $sact[$j] = 1;
+      if($firstmn) $mansel = $mansel." or ";
+      $firstmn = True;
+      $mansel = $mansel." (ManuID = ".$sid[$j].")";
+    }
+  }
+  $mansel = $mansel.")";
+  $comtodo = "./histog.py ".$dbfs[$chosen]." \"".$nms[$chosen]."\" \"".$mansel."\"";
+  $output = base64_encode(shell_exec($comtodo));
+  echo <<<_imgput
      <pre>
-     <img src="data:image/png;base64,$output" />                                              
+     <img  src="data:image/png;base64,$output" />                                               
      </pre>
 _imgput;
-   }
+}
 
 echo '<form action="p3.php" method="post"><pre>';
 for($j = 0 ; $j <sizeof($dbfs) ; ++$j) {
