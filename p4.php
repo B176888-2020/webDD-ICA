@@ -87,7 +87,7 @@ if(isset($_POST['tgval']) && isset($_POST['tgvalb']))
 }
 
 // Call the script and buttons
-echo '<form action="p4.php" method="post"><pre style="width: 40%;">';
+echo '<pre style="width: 30%;"><form action="p4.php" method="post">';
 for($j = 0 ; $j <sizeof($dbfs) ; ++$j) {
     if($j == 0) {
         printf(' %15s <input type="radio" name="tgval" value="%s" checked"/> %15s <input type="radio" name="tgvalb" value="%s" checked"/>',$nms[$j],$dbfs[$j],$nms[$j],$dbfs[$j]);
@@ -97,7 +97,7 @@ for($j = 0 ; $j <sizeof($dbfs) ; ++$j) {
     echo "\n";
 }
 echo '<div class="text-center"><input class="btn btn-default hpstyle" role="button" type="submit" value="Select 2 options and Submit" /></input></div>';
-echo '</pre></form>';
+echo '</form></pre>';
 
 // Main Content 2
 echo <<<_CONTENTE1
