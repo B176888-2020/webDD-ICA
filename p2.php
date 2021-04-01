@@ -49,13 +49,13 @@ function get_post($var)
 
 // Filter options
 echo <<<_FILTER
-   <form action="p2.php" method="post"><pre style="position: center;">
+   <form action="p2.php" method="post"><div class="text-center"><pre>
        Max Atoms      <input type="text" name="natmax"/>    Min Atoms    <input type="text" name="natmin"/>
        Max Carbons    <input type="text" name="ncrmax"/>    Min Carbons  <input type="text" name="ncrmin"/>
        Max Nitrogens  <input type="text" name="nntmax"/>    Min Nitrogens<input type="text" name="nntmin"/>
        Max Oxygens    <input type="text" name="noxmax"/>    Min Oxygens  <input type="text" name="noxmin"/>
         <div class="text-center"><input class="btn btn-default hpstyle" role="button" type="submit" style="width:20%;" value="Filter and List" /></input></div>
-</pre></form>
+</pre></div></form>
 _FILTER;
 
 echo <<<_CONTENTS2
