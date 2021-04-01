@@ -44,8 +44,8 @@ echo <<<_CONTENTS1
         <hr id="userman" class="col-md-14">
         <h2>User Manual</h2>
             <h3>Login in and Exit</h3>
-            <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/complib.php" class="dropdown-toggle">Link: Login Entry</a>
-            <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p5.php" class="dropdown-toggle">Link: Exit Entry</a>
+            <p><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/complib.php" class="dropdown-toggle">Link: Login Entry</a></p>
+            <p><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p5.php" class="dropdown-toggle">Link: Exit Entry</a></p>
             <p>When you first enter the website, you will be asked to enter the first name and second name for further usage. This name is only used for an identity for access record, and there may not be cookies to record your results. And when you decide to complete your journey of IDWD-ICA, you can leave the web application with the Exit button on the navigation bar. </p>
             
             <h3>Search Suppliers</h3>
@@ -58,8 +58,8 @@ echo <<<_CONTENTS1
            
             
             <h3>Statistics, Visualisation and Correlation for attributes</h3>
-            <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p3.php" class="dropdown-toggle">Link: Statistics and Visualisation of one variable</a>
-            <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p4.php" class="dropdown-toggle">Link: Calculate the correlation between two attributes</a>
+            <p><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p3.php" class="dropdown-toggle">Link: Statistics and Visualisation of one variable</a></p>
+            <p><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p4.php" class="dropdown-toggle">Link: Calculate the correlation between two attributes</a></p>
             <p>On the Stats & Corr page, you can find the method to calculate the average and standard deviation of particular compounds and visualise the distribution with a histogram on the One Variable tab. On the other page for two variables, you can calculate the correlations between two attributes and with the support of R shiny, there may be more statistics for further developments.</p>
             
             <p>&nbsp;</p>
