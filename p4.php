@@ -81,9 +81,11 @@ if(isset($_POST['tgval']) && isset($_POST['tgvalb']))
     }
     $mansel = $mansel.")";
     $comtodo = "./python/correlate3.py ".$dbfs[$chosen]." ".$dbfs[$chosenb]." \"".$mansel."\"";
+    echo '<p class="pstyle" sytle="color: #FFD465;"> <strong> Currently selected Suppliers: </strong>';
     printf(" Correlation for %s (%s) vs %s (%s) <br />\n", $dbfs[$chosen],$nms[$chosen],$dbfs[$chosenb],$nms[$chosenb]);
     $rescor = system($comtodo);
     printf("\n");
+    echo '</p>';
 }
 
 // Call the script and buttons
