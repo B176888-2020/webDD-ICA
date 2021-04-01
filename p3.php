@@ -12,7 +12,7 @@ echo<<<_HEAD1
 <!-- Metadata and css style for all pages -->
 <head>
     <!-- Title -->
-    <title>IDWD-ICA: One Variable Statistics</title>
+    <title>One Variable Statistics-IDWD-ICA</title>
     <!-- Define the Encoding system -->
     <meta charset="utf-8">
     <!-- Bootstrap Core CSS -->

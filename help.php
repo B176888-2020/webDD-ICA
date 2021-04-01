@@ -11,7 +11,7 @@ echo <<<_HEAD1
 
 <!-- Metadata and css style for all pages -->
 <head>
-    <title>IDWD-ICA: Help</title>
+    <title>Help-IDWD-ICA</title>
     <!-- Define the Encoding system -->
     <meta charset="utf-8">
     <!-- Bootstrap Core CSS -->
@@ -38,20 +38,25 @@ echo <<<_CONTENTS1
         <h1 id="overview" class="">Document</h1>
         <hr class="col-md-12">
         <h2>Overview</h2> 
-        <p>IDWD-ICA (Introduction to )</p>
+        <p>IDWD-ICA (Introduction to web site and database design for drug discovery)</p>
         <p>&nbsp;</p>
         
         <hr id="userman" class="col-md-14">
         <h2>User Manual</h2>
             <h3>Search Suppliers</h3>
             <p>In the first page </p>
+            <h3>Search Suppliers</h3>
+            <p>In the first page </p>
+            
             <p>&nbsp;</p>
       
       <hr id="ref" class="col-md-14">
       <h2>References</h2>
-        <p>[1] Sepantafar, Mohammadmajid, et al. “Engineered Hydrogels in Cancer Therapy and Diagnosis.” Trends in Biotechnology 35.11(2017).</p>
-        <p>[2] Park, Semi , et al. "Benefits of Recurrent Colonic Stent Insertion in a Patient with Advanced Gastric Cancer with Carcinomatosis Causing Colonic Obstruction." Yonsei Medical Journal 50.2(2009).</p>
-        <p>[3] English, Max A., et al. "Programmable CRISPR-responsive smart materials." Science 365.6455 (2019): 780-785.</p>
+        <p>1. M.O., Jacob Thornton, and Bootstrap. Bootstrap. URL: https://getbootstrap.com/docs/5.0/getting-started/introduction</p>
+        <p>2. Course Materials in MSc Course "Introduction to web site and database design for drug discovery"</p>
+        <p>3. js.foundation, J. F.-. jQuery. URL: https://jquery.com/</p>
+        <p>4. Daylight Theory: SMILES. URL: https://www.daylight.com/dayhtml/doc/theory/theory.smiles.html.</p>
+        <p>5. NCI/CADD Group Chemoinformatics Tools and User Services. URL: https://cactus.nci.nih.gov/</p>
       </div>
 
       <hr class="col-md-13">

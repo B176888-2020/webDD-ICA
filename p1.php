@@ -12,7 +12,7 @@ echo<<<_HEAD1
 <!-- Metadata and css style for all pages -->
 <head>
     <!-- Title -->
-    <title>IDWD-ICA: Suppliers</title>
+    <title>Suppliers-IDWD-ICA</title>
     <!-- Define the Encoding system -->
     <meta charset="utf-8">
     <!-- Bootstrap Core CSS -->
