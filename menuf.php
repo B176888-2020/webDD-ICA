@@ -50,7 +50,7 @@ echo <<<_MENU1
             <!-- Show statistics -->
             <li class="dropdown">
               <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p3.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                Statistics and Correlation
+                Stat & Corr
                 <span class="caret" style="color: #FFD465;"></span>
               </a>
               <ul class="dropdown-menu" style="min-width:100%;">

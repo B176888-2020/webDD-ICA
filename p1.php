@@ -34,10 +34,9 @@ echo <<<_CONTENTS1
 
     <div class="col-md-9" id="mycontent">
       <div>
-        <h1 class="">Select Suppliers</h1>
+        <h1 id="options" class="">Select Suppliers</h1>
         <hr class="col-md-12">
-        <hr id="options" class="col-md-14">
-        <h2>“Supplier Options”</h2> 
+        <h2>Supplier Options</h2> 
 _CONTENTS1;
 
 
@@ -186,15 +185,20 @@ include 'footer.php';
 
 // Tail for the HTML
 echo <<<_TAIL1
-<!-- --------------- Bootstrap Core JavaScript --------------- -->
+<!-- --------------- JQuery--------------- -->
 <script src="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/JS/jquery.min.js"></script>
+<!-- --------------- JQuery tablesorter--------------- -->
 <script src="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/JS/jquery.tablesorter.min.js"></script>
-<!-- <script src="../carousel/js/jquery.js"></script> -->
+<script type="text/javascript">
+$(function() {
+  $("#myTable").tablesorter();
+});
+</script>
+
+<!-- ---------------Bootstrap--------------- -->
 <script src="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/JS/bootstrap.js"></script>
 <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
 <script src="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/JS/holder.min.js"></script>
-<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-
 
 </body>
 </html>

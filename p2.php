@@ -122,7 +122,7 @@ if($rows > 100) {
 } else  {
   // Generate the Table
 echo <<<_TABLESET
-<table class="tablesorter" border="1" style="width: 100%;">
+<table id="p2t" class="tablesorter" border="1" style="width: 100%;">
 <tr>
 <th>Cataloge ID</th>
 <th>manufacturer</th>
@@ -174,10 +174,17 @@ include 'footer.php';
 
 // Tail for the HTML
 echo <<<_TAIL1
-<!-- --------------- Bootstrap Core JavaScript --------------- -->
+<!-- --------------- JQuery--------------- -->
 <script src="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/JS/jquery.min.js"></script>
+<!-- --------------- JQuery tablesorter--------------- -->
 <script src="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/JS/jquery.tablesorter.min.js"></script>
-<!-- <script src="../carousel/js/jquery.js"></script> -->
+<script type="text/javascript">
+$(function() {
+  $("#p2t").tablesorter();
+});
+</script>
+
+<!-- ---------------Bootstrap--------------- -->
 <script src="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/JS/bootstrap.js"></script>
 <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
 <script src="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/JS/holder.min.js"></script>
