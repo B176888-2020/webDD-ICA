@@ -34,17 +34,18 @@ echo <<<_CONTENTS1
 
     <div class="col-md-9" id="mycontent">
       <div>
-        <h1 id="options" class="">Select Suppliers</h1>
+        <h1 id="options" class="">Exit</h1>
         <hr class="col-md-12">
-        <h2>Supplier Options</h2> 
+      <h2>Thank you for your usage!</h2> 
 _CONTENTS1;
 
 $fn = $_SESSION['forname'];
 echo <<<_MAIN1
     <pre>
-    Goodbye  $fn;
-    You have now exited Complib
+    Goodbye!!! $fn;
+    Or return to the login page.
     </pre>
+    <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/complib.php" class="dropdown-toggle">Return</a>
 _MAIN1;
 
 $_SESSION = array();

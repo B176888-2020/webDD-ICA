@@ -32,9 +32,9 @@ echo <<<_CONTENTS1
 
     <div class="col-md-9" id="mycontent">
       <div>
-        <h1 id="options" class="">Select Suppliers</h1>
+        <h1 id="options" class="">Login</h1>
         <hr class="col-md-12">
-        <h2>Supplier Options</h2> 
+        <h2>Please enter your first name and second name</h2> 
 _CONTENTS1;
 
 
@@ -67,7 +67,7 @@ echo <<<_EOP
   <pre>
        First Name<input type="text" name="fn"/>
        Second Name <input type="text" name="sn"/>
-                   <input type="submit" value="go" />
+                   <div class="text-center"><input class="btn btn-default hpstyle" role="button" type="submit" style="width:20%;" value="Login in" /></input></div>
 </pre></form>
 _EOP;
 
