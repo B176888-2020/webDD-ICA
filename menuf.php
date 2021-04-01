@@ -1,28 +1,5 @@
 <?php
 echo <<<_MENU1
-   <br> Your options are </br>
-    <!-- 
-    <table width ="70%" border="0" cellspacing="0" align="center"> <tr>
-   <td bgcolor="#DCEFFE"><div align="center">
-    <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p1.php"> Select Suppliers </a>
-    </div></td>
-   <td bgcolor="#DCEFFE"><div align="center">
-    <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p2.php"> Search Compounds </a>
-    </div></td>
-   <td bgcolor="#DCEFFE"><div align="center">
-   <td bgcolor="#DCEFFE"><div align="center">
-    <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p3.php"> Stats </a>
-    </div></td>
-   <td bgcolor="#DCEFFE"><div align="center">
-   <td bgcolor="#DCEFFE"><div align="center">
-    <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p4.php"> Correlations </a>
-    </div></td>
-   <td bgcolor="#DCEFFE"><div align="center">
-    <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p5.php"> Exit </a>
-    </div></td>
-    </tr></table>
--->
-
 <!-- Nav bar -->
 <div class="navbar-wrapper">
   <div class="container">
@@ -45,12 +22,6 @@ echo <<<_MENU1
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right .navbar-fixed-top">
             <!-- Nav Bar objects -->
-            <!-- Search -->
-            <li class="dropdown">
-              <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p5.php" class="dropdown-toggle">
-                Search
-              </a>
-            </li>
             
             <!-- Select the suppliers -->
             <li class="dropdown">
@@ -83,8 +54,8 @@ echo <<<_MENU1
                 <span class="caret" style="color: #FFD465;"></span>
               </a>
               <ul class="dropdown-menu" style="min-width:100%;">
-                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p4.php">P4</a></li>
-                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p5.php">P5</a></li>
+                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p3.php">Single Variable</a></li>
+                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p4.php">Double Variables</a></li>
               </ul>
             </li>
             
@@ -107,8 +78,9 @@ echo <<<_MENU1
                 <span class="caret" style="color: #FFD465;"></span>
               </a>
               <ul class="dropdown-menu" style="min-width:100%;">
-                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p4.php">P4</a></li>
-                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p5.php">P5</a></li>
+                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/help.php#overview">Overview</a></li>
+                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/help.php#userman">User manual</a></li>
+                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/help.php#ref">References</a></li>
               </ul>
             </li>
             
