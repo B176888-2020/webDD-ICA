@@ -66,11 +66,7 @@ for($j = 0 ; $j < $rows ; ++$j)
 }
 $mansel = $mansel.")";
 $setpar = isset($_POST['natmax']);
-echo <<<_MAIN1
-    <pre>
-This is the catalogue retrieval Page
-    </pre>
-_MAIN1;
+
 if($setpar) {
 $firstsl = False;
 $compsel = "select catn,id,ManuID from Compounds where (";
@@ -138,7 +134,7 @@ _TABLESET;
 
 // Filter options
 echo <<<_FILTER
-   <form action="p2smilesex.php" method="post"><pre>
+   <form action="p2.php" method="post"><pre>
        Max Atoms      <input type="text" name="natmax"/>    Min Atoms    <input type="text" name="natmin"/>
        Max Carbons    <input type="text" name="ncrmax"/>    Min Carbons  <input type="text" name="ncrmin"/>
        Max Nitrogens  <input type="text" name="nntmax"/>    Min Nitrogens<input type="text" name="nntmin"/>
