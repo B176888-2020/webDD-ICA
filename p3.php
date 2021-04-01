@@ -50,7 +50,9 @@ if(isset($_POST['tgval']))
      for($j = 0 ; $j <sizeof($dbfs) ; ++$j) {
        if(strcmp($dbfs[$j],$tgval) == 0) $chosen = $j;
      }
+     echo '<p class="pstyle" sytle="color: #FFD465;"> <strong>';
      printf(" Statistics for %s (%s)<br />\n",$dbfs[$chosen],$nms[$chosen]);
+     echo '</strong></p>';
      //Your mysql and statistics calculation goes here
      $db_server = mysql_connect($db_hostname,$db_username,$db_password);
      if(!$db_server) die("Unable to connect to database: " . mysql_error());
@@ -61,8 +63,9 @@ if(isset($_POST['tgval']))
      $result = mysql_query($query);
      if(!$result) die("unable to process query: " . mysql_error());
      $row = mysql_fetch_row($result);
-
+     echo '<p class="pstyle" sytle="color: #FFD465;">';
      printf(" Average %f  Standard Dev %f <br />\n",$row[0],$row[1]);
+     echo '</p>';
 
      // Figure part
      $query = "select * from Manufacturers";
@@ -96,7 +99,7 @@ if(isset($_POST['tgval']))
 _imgput;
    }
 
-echo '<form action="p3.php" method="post"><pre>';
+echo '<form action="p3.php" method="post"><pre style="width: 25%; font-family: monospace;">';
 for($j = 0 ; $j <sizeof($dbfs) ; ++$j) {
   if($j == 0) {
      printf(' %15s <input type="radio" name="tgval" value="%s" checked"/>',$nms[$j],$dbfs[$j]);
@@ -106,7 +109,7 @@ for($j = 0 ; $j <sizeof($dbfs) ; ++$j) {
   echo "\n";
 }
 
-echo '<input type="submit" value="OK" />';
+echo '<div class="text-center"><input class="btn btn-default hpstyle" role="button" type="submit" value="Select and Plot" /></input></div>';
 echo '</pre></form>';
 
 
