@@ -38,14 +38,30 @@ echo <<<_CONTENTS1
         <h1 id="overview" class="">Document</h1>
         <hr class="col-md-12">
         <h2>Overview</h2> 
-        <p>IDWD-ICA (Introduction to web site and database design for drug discovery)</p>
+        <p>IDWD-ICA (Introduction to web site and database design for drug discovery) is a web application to filter and select the molecular compounds with the requests of chosen suppliers or compound attributes. With the selected data set stored in MySQL database, IDWD-ICA also provides primary statistics analysis and visualisation about the compound attributes and correlationship. IDWD-ICA is developed based on the LAMP techniques stack and techniques from Bootstrap and JQuery also help to make the website more user-friendly. Wish this prototype application can help you in your further research and web development.  </p>
         <p>&nbsp;</p>
         
         <hr id="userman" class="col-md-14">
         <h2>User Manual</h2>
+            <h3>Login in and Exit</h3>
+            <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/complib.php" class="dropdown-toggle">Login Entry</a>
+            <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p5.php" class="dropdown-toggle">Exit Entry</a>
+            <p> </p>
+            
             <h3>Search Suppliers</h3>
+            <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p1.php" class="dropdown-toggle">Start-Searching Suppliers</a>
             <p>In the first page </p>
-            <h3>Search Suppliers</h3>
+            
+            <h3>Filter Compounds</h3>
+            <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p2.php" class="dropdown-toggle">Start-Filtering Compounds</a>
+            <p>In the first page </p>
+            
+            <h3>Statistics and Visualisation</h3>
+            <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p3.php" class="dropdown-toggle">Start-Statistics and Visualisation of one variable</a>
+            <p>In the first page </p>
+            
+            <h3>Correlation between two attributes</h3>
+            <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p4.php" class="dropdown-toggle">Start-Calculate the correlation between two attributes</a>
             <p>In the first page </p>
             
             <p>&nbsp;</p>
