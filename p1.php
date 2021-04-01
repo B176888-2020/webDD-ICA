@@ -11,6 +11,8 @@ echo<<<_HEAD1
 
 <!-- Metadata and css style for all pages -->
 <head>
+    <!-- Title -->
+    <title>IDWD-ICA: Suppliers</title>
     <!-- Define the Encoding system -->
     <meta charset="utf-8">
     <!-- Bootstrap Core CSS -->
@@ -122,6 +124,7 @@ echo <<<_CONTENTS2
     <hr id="p1table" class="col-md-14">
     <h2>Manufacturer Summary Table</h2> 
 _CONTENTS2;
+
 for($j = 0 ; $j < $rows ; ++$j)
 {
     if($sact[$j] == 1) {

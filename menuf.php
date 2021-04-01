@@ -37,14 +37,9 @@ echo <<<_MENU1
             
             <!-- Search compounds -->
             <li class="dropdown">
-              <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p2.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p2.php" class="dropdown-toggle">
                 Compounds
-                <span class="caret" style="color: #FFD465;"></span>
               </a>
-              <ul class="dropdown-menu" style="min-width:100%;">
-                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p4.php">P4</a></li>
-                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p5.php">P5</a></li>
-              </ul>
             </li>
             
             <!-- Show statistics -->
