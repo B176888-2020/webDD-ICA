@@ -45,6 +45,13 @@ echo <<<_MENU1
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right .navbar-fixed-top">
             <!-- Nav Bar objects -->
+            <!-- Search -->
+            <li class="dropdown">
+              <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p5.php" class="dropdown-toggle">
+                Sign out
+              </a>
+            </li>
+            
             <!-- Select the suppliers -->
             <li class="dropdown">
               <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p1.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">

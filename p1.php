@@ -107,6 +107,54 @@ echo <<<_SUBMIT1
 </pre></form>
 _SUBMIT1;
 
+// Show the table of the selected supplier
+$dbfs = array("catn","natm","ncar","nnit","noxy","nsul","ncycl","nhdon","nhacc","nrotb","mw","TPSA","XLogP");
+$nms = array("catid","n atoms","n carbons","n nitrogens","n oxygens","n sulphurs","n cycles","n H donors","n H acceptors","n rot bonds","mol wt","TPSA","XLogP");
+$rowid = array(11,1,2,3,4,5,6,7,8,9,12,13,14);
+$db_server = mysql_connect($db_hostname,$db_username,$db_password);
+if(!$db_server) die("Unable to connect to database: " . mysql_error());
+mysql_select_db($db_database,$db_server) or die ("Unable to select database: " . mysql_error());
+$query = "select * from Manufacturers";
+$result = mysql_query($query);
+if(!$result) die("unable to process query: " . mysql_error());
+$manrows = mysql_num_rows($result);
+$manarray = array();
+$manid = array();
+$chosen = $_POST['tgval'];
+for($j = 0 ; $j < $manrows ; ++$j)
+{
+    $row = mysql_fetch_row($result);
+    $manarray[$j] = $row[1];
+    $manid[$j] = $j + 1;
+}
+$query = "select * from Compounds where ManuID = ".$chosen;
+$result = mysql_query($query);
+if(!$result) die("unable to process query: " . mysql_error());
+$resrows = mysql_num_rows($result);
+
+// Content 2
+echo <<<_CONTENTS2
+    <h2>“Manufacturer Summary Table”</h2> 
+_CONTENTS2;
+
+echo "<table id=\"myTable\" class=\"tablesorter\" width =\"70%\" border=\"2\" cellspacing=\"1\" align=\"center\"><thead><tr>";
+for($k = 0 ; $k < sizeof($dbfs) ; ++$k) {
+    echo "<th>".$nms[$k]."</th>";
+}
+echo "</tr>\n</thead>\n<tbody>\n";
+for($j = 0 ; $j < $resrows ; ++$j)
+{
+    $row = mysql_fetch_row($result);
+    echo "<tr>";
+    for($k = 0 ; $k < sizeof($dbfs) ; ++$k) {
+        echo "<td>".$row[$rowid[$k]]."</td>";
+    }
+    echo "</tr>\n";
+}
+echo "</tbody>\n</table>\n";
+
+
+
 // Main Content 2
 echo <<<_CONTENTE1
     <p>&nbsp;</p>

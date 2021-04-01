@@ -99,7 +99,7 @@ if(isset($_POST['tgval']))
 _imgput;
    }
 
-echo '<form action="p3.php" method="post"><pre style="width: 30%; font-family: monospace;">';
+echo '<form action="p3.php" method="post"><pre style="width: 25%; font-family: monospace;">';
 for($j = 0 ; $j <sizeof($dbfs) ; ++$j) {
   if($j == 0) {
      printf(' %15s <input type="radio" name="tgval" value="%s" checked"/>',$nms[$j],$dbfs[$j]);
