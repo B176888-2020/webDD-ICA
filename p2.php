@@ -110,10 +110,14 @@ echo "\n";
 echo "</pre>";
 $result = mysql_query($compsel);
 if(!$result) die("unable to process query: " . mysql_error());
+
+// Extract the rows
 $rows = mysql_num_rows($result);
 if($rows > 100) {
+  // Warning for too many outputs
   echo "<pre>\nToo many results ",$rows," Max is 100\n</pre>\n";
 } else  {
+  // Generate the Table
 echo <<<_TABLESET
 <table border="1">
 <tr>
@@ -128,15 +132,16 @@ _TABLESET;
   {
     $row = mysql_fetch_row($result);
     $cid = $row[1];
-    $compselsmi = "select smiles from Smiles where cid = ".$cid;
+    $compselsmi = "select smiles from Smiles where cid = ". $cid;
     $resultsmi = mysql_query($compselsmi);
     $smilesrow = mysql_fetch_row($resultsmi);
-    $convurl = "https://cactus.nci.nih.gov/chemical/structure/".urlencode($smilesrow[0])."/image";
-    $convstr = base64_encode(file_get_contents($convurl));
-    printf("<tr><td>%s</td><td>%s</td><td>%s</td><td><img  src=\"data:image/gif;base64,%s\"></img></td></tr>\n",$row[0],$snm[$row[2]-1],$smilesrow[0],$convstr);
+    //$convurl = "https://cactus.nci.nih.gov/chemical/structure/".urlencode($smilesrow[0])."/image";
+    //$convstr = base64_encode(file_get_contents($convurl));
+    printf("<tr><td>%s</td><td>%s</td><td>%s</td><td><img src=\"data:image/gif;base64,%s\"/></td></tr>\n",$row[0],$snm[$row[2]-1],$smilesrow[0],$convstr);
 
   }
   echo "</table>\n";
+
 }
 } else {
   echo "<pre>\nNo Query Given\n</pre>\n";
