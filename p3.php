@@ -32,6 +32,7 @@ if(isset($_POST['tgval']))
      $row = mysql_fetch_row($result);
      printf(" Average %f  Standard Dev %f <br />\n",$row[0],$row[1]);
    }
+
 echo '<form action="p3.php" method="post"><pre>';
 for($j = 0 ; $j <sizeof($dbfs) ; ++$j) {
   if($j == 0) {
@@ -40,9 +41,11 @@ for($j = 0 ; $j <sizeof($dbfs) ; ++$j) {
      printf(' %15s <input type="radio" name="tgval" value="%s"/>',$nms[$j],$dbfs[$j]);
   }
   echo "\n";
-} 
+}
+
 echo '<input type="submit" value="OK" />';
 echo '</pre></form>';
+
 echo <<<_TAIL1
 </body>
 </html>

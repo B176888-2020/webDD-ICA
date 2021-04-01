@@ -19,7 +19,8 @@ $query = "select * from Manufacturers";
        $mask = (2 * $mask) + 1;
      }
 $_SESSION['supmask'] = $mask;
-   echo <<<_EOP
+
+echo <<<_EOP
 <script>
    function validate(form) {
    fail = ""

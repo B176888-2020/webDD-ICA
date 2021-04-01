@@ -1,6 +1,4 @@
 <?php
-
-
 // --------------- The Shared Part For All Pages: Navbar and HEAD information --------------- //
 // Start the page and ensure the login and redirect method.
 session_start();

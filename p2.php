@@ -81,7 +81,8 @@ if($setpar) {
     echo "No Query Given\n";
   }
   echo "</pre>";
-} 
+}
+
 echo <<<_TAIL1
    <form action="p2.php" method="post"><pre>
        Max Atoms      <input type="text" name="natmax"/>    Min Atoms    <input type="text" name="natmin"/>
