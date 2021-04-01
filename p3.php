@@ -54,16 +54,26 @@ if(isset($_POST['tgval']))
      //Your mysql and statistics calculation goes here
      $db_server = mysql_connect($db_hostname,$db_username,$db_password);
      if(!$db_server) die("Unable to connect to database: " . mysql_error());
-     mysql_select_db($db_database,$db_server) or die ("Unable to select database: " . mysql_error());     
+     mysql_select_db($db_database,$db_server) or die ("Unable to select database: " . mysql_error());
+
+     // Statistics part
      $query = sprintf("select AVG(%s), STD(%s) from Compounds",$dbfs[$chosen],$dbfs[$chosen]);
      $result = mysql_query($query);
      if(!$result) die("unable to process query: " . mysql_error());
      $row = mysql_fetch_row($result);
+
      printf(" Average %f  Standard Dev %f <br />\n",$row[0],$row[1]);
+
+     // Figure part
+     $query = "select * from Manufacturers";
+     $result = mysql_query($query);
+     if(!$result) die("unable to process query: " . mysql_error());
+     $rows = mysql_num_rows($result);
+
      $smask = $_SESSION['supmask'];
      $firstmn = False;
      $mansel = "(";
-     for($j = 0 ; $j < $rows ; ++$j) {              #Figure out the manufacturer clause for the where statement
+     for($j = 0 ; $j < $rows ; ++$j) {
        $row = mysql_fetch_row($result);
        $sid[$j] = $row[0];
        $snm[$j] = $row[1];
@@ -82,7 +92,7 @@ if(isset($_POST['tgval']))
 
      echo <<<_imgput
      <pre>
-     <img  src="data:image/png;base64,$output" />                                              
+     <img src="data:image/png;base64,$output" />                                              
      </pre>
 _imgput;
    }
