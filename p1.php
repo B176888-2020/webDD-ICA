@@ -117,13 +117,20 @@ $manrows = mysql_num_rows($result);
 $manarray = array();
 $manid = array();
 
+// Content 2
+echo <<<_CONTENTS2
+    <h2>Manufacturer Summary Table</h2> 
+_CONTENTS2;
 for($j = 0 ; $j < $rows ; ++$j)
 {
     if($sact[$j] == 1) {
+        echo '<p class="pstyle" sytle="color: #FFD465;"> <strong> Currently selected Suppliers: </strong>';
+        echo $snm[$j];
+        echo '(Since it takes time to show the multiple large data sets, only the last choice will be displayed)</p>';
         $chosen = $j + 1;
     }
 }
-
+// Generate the table for the last choice
 for($j = 0 ; $j < $manrows ; ++$j)
 {
     $row = mysql_fetch_row($result);
@@ -134,11 +141,6 @@ $query = "select * from Compounds where ManuID = ".$chosen;
 $result = mysql_query($query);
 if(!$result) die("unable to process query: " . mysql_error());
 $resrows = mysql_num_rows($result);
-
-// Content 2
-echo <<<_CONTENTS2
-    <h2>Manufacturer Summary Table</h2> 
-_CONTENTS2;
 
 echo "<table id=\"myTable\" class=\"tablesorter\" width =\"100%\" border=\"2\" cellspacing=\"1\" align=\"center\"><thead><tr>";
 for($k = 0 ; $k < sizeof($dbfs) ; ++$k) {
