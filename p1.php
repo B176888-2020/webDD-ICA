@@ -124,12 +124,13 @@ _CONTENTS2;
 for($j = 0 ; $j < $rows ; ++$j)
 {
     if($sact[$j] == 1) {
-        echo '<p class="pstyle" sytle="color: #FFD465;"> <strong> Currently selected Suppliers: </strong>';
-        echo $snm[$j];
-        echo '(Since it takes time to show the multiple large data sets, only the last choice will be displayed)</p>';
         $chosen = $j + 1;
     }
 }
+echo '<p class="pstyle" sytle="color: #FFD465;"> <strong> Currently selected Suppliers: </strong>';
+echo $snm[$chosen];
+echo '(Since it takes time to show the multiple large data sets, only the last choice will be displayed)</p>';
+
 // Generate the table for the last choice
 for($j = 0 ; $j < $manrows ; ++$j)
 {
