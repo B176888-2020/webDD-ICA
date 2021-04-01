@@ -63,7 +63,7 @@ echo <<<_EOP
        else {alert(fail); return false}
    }
 </script>
-<form action="indexp.php" method="post" onSubmit="return validate(this)">
+<form action="help.php" method="post" onSubmit="return validate(this)">
   <pre>
        First Name<input type="text" name="fn"/>
        Second Name <input type="text" name="sn"/>
