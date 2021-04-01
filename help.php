@@ -38,31 +38,29 @@ echo <<<_CONTENTS1
         <h1 id="overview" class="">Document</h1>
         <hr class="col-md-12">
         <h2>Overview</h2> 
-        <p>IDWD-ICA (Introduction to web site and database design for drug discovery) is a web application to filter and select the molecular compounds with the requests of chosen suppliers or compound attributes. With the selected data set stored in MySQL database, IDWD-ICA also provides primary statistics analysis and visualisation about the compound attributes and correlationship. IDWD-ICA is developed based on the LAMP techniques stack and techniques from Bootstrap and JQuery also help to make the website more user-friendly. Wish this prototype application can help you in your further research and web development.  </p>
+        <p>IDWD-ICA (Introduction to web site and database design for drug discovery) is a web application to filter and select the molecular compounds with the requests of chosen suppliers or compound attributes. With the selected data set stored in MySQL database, IDWD-ICA also provides primary statistics analysis and visualisation about the compound attributes and correlations. IDWD-ICA is developed based on the LAMP techniques stack, and techniques from Bootstrap and JQuery also help to make the website more user-friendly. Wish this prototype application can help you in your further research and web development. Further issues and comments can also be provided through the GitHub: <a href="https://github.com/B176888-2020/webDD-ICA">https://github.com/B176888-2020/webDD-ICA</a>. </p>
         <p>&nbsp;</p>
         
         <hr id="userman" class="col-md-14">
         <h2>User Manual</h2>
             <h3>Login in and Exit</h3>
-            <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/complib.php" class="dropdown-toggle">Login Entry</a>
-            <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p5.php" class="dropdown-toggle">Exit Entry</a>
-            <p> </p>
+            <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/complib.php" class="dropdown-toggle">Link: Login Entry</a>
+            <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p5.php" class="dropdown-toggle">Link: Exit Entry</a>
+            <p>When you first enter the website, you will be asked to enter the first name and second name for further usage. This name is only used for an identity for access record, and there may not be cookies to record your results. And when you decide to complete your journey of IDWD-ICA, you can leave the web application with the Exit button on the navigation bar. </p>
             
             <h3>Search Suppliers</h3>
-            <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p1.php" class="dropdown-toggle">Start-Searching Suppliers</a>
-            <p>In the first page </p>
+            <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p1.php" class="dropdown-toggle">Link: Searching Suppliers</a>
+            <p>On the Supplier page, you can choose particular suppliers and select the data set from the suppliers. After selection, you can find the annotation of your choices, and the table with sorter will be listed in the Summary Table section. As it will take too much time to view the tables from multiple suppliers, the summary table will only show the data set of the last supplier. Thus, please wait for the loading of the data and functions from Javascirpts, and there will be a roll-up button to move up when navigating the long list of data. </p>
             
             <h3>Filter Compounds</h3>
-            <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p2.php" class="dropdown-toggle">Start-Filtering Compounds</a>
-            <p>In the first page </p>
+            <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p2.php" class="dropdown-toggle">Link: Filtering Compounds</a>
+            <p>On the Compounds page, the filter can be used to select the range for different components of compounds and find potential molecules which meet your requirements. With the proper settlement of the attribute combination, you can submit your request, and the potential compounds will be listed in the Filtering Result section. The filtering result is constructed with the molecular ID, the manufacturer, the SMILES chemical formula and the gif images from NCI/CADD Group Chemoinformatics Tools and hope this information can help you find the potential compounds for your drug discovery.</p>
+           
             
-            <h3>Statistics and Visualisation</h3>
-            <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p3.php" class="dropdown-toggle">Start-Statistics and Visualisation of one variable</a>
-            <p>In the first page </p>
-            
-            <h3>Correlation between two attributes</h3>
-            <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p4.php" class="dropdown-toggle">Start-Calculate the correlation between two attributes</a>
-            <p>In the first page </p>
+            <h3>Statistics, Visualisation and Correlation for attributes</h3>
+            <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p3.php" class="dropdown-toggle">Link: Statistics and Visualisation of one variable</a>
+            <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p4.php" class="dropdown-toggle">Link: Calculate the correlation between two attributes</a>
+            <p>On the Stats & Corr page, you can find the method to calculate the average and standard deviation of particular compounds and visualise the distribution with a histogram on the One Variable tab. On the other page for two variables, you can calculate the correlations between two attributes and with the support of R shiny, there may be more statistics for further developments.</p>
             
             <p>&nbsp;</p>
       
