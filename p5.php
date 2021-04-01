@@ -27,6 +27,19 @@ _HEAD1;
 include 'menuf.php';
 
 // --------------- The Shared Part For All Pages: Navbar and HEAD information  --------------- //
+// --------------- Features for Different Pages: Correlation --------------- //
+// Main Content 1
+echo <<<_CONTENTS1
+<div class="mycontainer" id="mycontentcon">
+  <div class="row">
+
+    <div class="col-md-9" id="mycontent">
+      <div>
+        <h1 class="">Statistics and Correlation</h1>
+        <hr class="col-md-12">
+        <h2>Two Variable Statistics</h2> 
+_CONTENTS1;
+
 
 $fn = $_SESSION['forname'];
 echo <<<_MAIN1
@@ -40,6 +53,17 @@ if( session_id() != "" || isset($_COOKIE[session_name()]))
   setcookie(session_name(), '', time() - 2592000, '/');
   session_destroy();
 
+// Main Content 2
+echo <<<_CONTENTE1
+    <p>&nbsp;</p>
+
+      </div>
+      <hr class="col-md-13">
+    </div>
+  </div>
+</div>
+</div>
+_CONTENTE1;
 
 // --------------- The Shared Part For All Pages: Roll up button, Footer and JavaScirpt Files --------------- //
 // Roll Up Button
