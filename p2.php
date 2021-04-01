@@ -49,7 +49,7 @@ function get_post($var)
 
 // Filter options
 echo <<<_FILTER
-   <form action="p2.php" method="post"><pre>
+   <form action="p2.php" method="post"><pre style="position: center;">
        Max Atoms      <input type="text" name="natmax"/>    Min Atoms    <input type="text" name="natmin"/>
        Max Carbons    <input type="text" name="ncrmax"/>    Min Carbons  <input type="text" name="ncrmin"/>
        Max Nitrogens  <input type="text" name="nntmax"/>    Min Nitrogens<input type="text" name="nntmin"/>
@@ -60,7 +60,7 @@ _FILTER;
 
 echo <<<_CONTENTS2
     <hr class="col-md-14">
-    <h2>Filter Result</h2> 
+    <h2>Filtering Result</h2> 
 _CONTENTS2;
 
 $db_server = mysql_connect($db_hostname,$db_username,$db_password);
