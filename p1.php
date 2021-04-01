@@ -120,7 +120,7 @@ $manid = array();
 for($j = 0 ; $j < $rows ; ++$j)
 {
     if($sact[$j] == 1) {
-        $chosen = $snm[$j];
+        $chosen = $j + 1;
     }
 }
 
