@@ -11,6 +11,8 @@ echo<<<_HEAD1
 
 <!-- Metadata and css style for all pages -->
 <head>
+    <!-- Title -->
+    <title>IDWD-ICA: Compounds</title>
     <!-- Define the Encoding system -->
     <meta charset="utf-8">
     <!-- Bootstrap Core CSS -->
@@ -36,7 +38,7 @@ echo <<<_CONTENTS1
       <div>
         <h1 class="">Select Compounds</h1>
         <hr class="col-md-12">
-        <h2>Check the </h2> 
+        <h2> Filter for the targeted compounds </h2> 
 _CONTENTS1;
 
 // Get the POST session
@@ -52,9 +54,14 @@ echo <<<_FILTER
        Max Carbons    <input type="text" name="ncrmax"/>    Min Carbons  <input type="text" name="ncrmin"/>
        Max Nitrogens  <input type="text" name="nntmax"/>    Min Nitrogens<input type="text" name="nntmin"/>
        Max Oxygens    <input type="text" name="noxmax"/>    Min Oxygens  <input type="text" name="noxmin"/>
-                   <input type="submit" value="list" />
+        <div class="text-center"><input class="btn btn-default hpstyle" role="button" type="submit" style="width:20%;" value="Filter and List" /></input></div>
 </pre></form>
 _FILTER;
+
+echo <<<_CONTENTS2
+    <hr class="col-md-14">
+    <h2>Filter Result</h2> 
+_CONTENTS2;
 
 $db_server = mysql_connect($db_hostname,$db_username,$db_password);
 if(!$db_server) die("Unable to connect to database: " . mysql_error());
