@@ -4,7 +4,7 @@ import sys
 import pymysql
 import numpy as np
 import scipy.stats as sp
-con = pymysql.connect(host='localhost', user='s20592332', passwd='!u9cS7rain8', db='s20592332')
+con = pymysql.connect(host='localhost', user='s20592332', passwd='!u9cS7rain8', db='s2059232')
 cur = con.cursor()
 if(len(sys.argv) != 4) :
   print ("Usage: correlate.py col1 col2 (selection); Nparams = ",sys.argv)
