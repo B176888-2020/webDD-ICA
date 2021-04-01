@@ -44,22 +44,22 @@ echo <<<_CONTENTS1
         <hr id="userman" class="col-md-14">
         <h2>User Manual</h2>
             <h3>Login in and Exit</h3>
-            <p><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/complib.php" class="dropdown-toggle">Link: Login Entry</a></p>
-            <p><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p5.php" class="dropdown-toggle">Link: Exit Entry</a></p>
+            <p><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/complib.php" class="dropdown-toggle">  Link: Login Entry</a></p>
+            <p><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p5.php" class="dropdown-toggle">  Link: Exit Entry</a></p>
             <p>When you first enter the website, you will be asked to enter the first name and second name for further usage. This name is only used for an identity for access record, and there may not be cookies to record your results. And when you decide to complete your journey of IDWD-ICA, you can leave the web application with the Exit button on the navigation bar. </p>
             
             <h3>Search Suppliers</h3>
-            <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p1.php" class="dropdown-toggle">Link: Searching Suppliers</a>
+            <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p1.php" class="dropdown-toggle">  Link: Searching Suppliers</a>
             <p>On the Supplier page, you can choose particular suppliers and select the data set from the suppliers. After selection, you can find the annotation of your choices, and the table with sorter will be listed in the Summary Table section. As it will take too much time to view the tables from multiple suppliers, the summary table will only show the data set of the last supplier. Thus, please wait for the loading of the data and functions from Javascirpts, and there will be a roll-up button to move up when navigating the long list of data. </p>
             
             <h3>Filter Compounds</h3>
-            <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p2.php" class="dropdown-toggle">Link: Filtering Compounds</a>
+            <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p2.php" class="dropdown-toggle">  Link: Filtering Compounds</a>
             <p>On the Compounds page, the filter can be used to select the range for different components of compounds and find potential molecules which meet your requirements. With the proper settlement of the attribute combination, you can submit your request, and the potential compounds will be listed in the Filtering Result section. The filtering result is constructed with the molecular ID, the manufacturer, the SMILES chemical formula and the gif images from NCI/CADD Group Chemoinformatics Tools and hope this information can help you find the potential compounds for your drug discovery.</p>
            
             
             <h3>Statistics, Visualisation and Correlation for attributes</h3>
-            <p><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p3.php" class="dropdown-toggle">Link: Statistics and Visualisation of one variable</a></p>
-            <p><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p4.php" class="dropdown-toggle">Link: Calculate the correlation between two attributes</a></p>
+            <p><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p3.php" class="dropdown-toggle">  Link: Statistics and Visualisation of one variable</a></p>
+            <p><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p4.php" class="dropdown-toggle">  Link: Calculate the correlation between two attributes</a></p>
             <p>On the Stats & Corr page, you can find the method to calculate the average and standard deviation of particular compounds and visualise the distribution with a histogram on the One Variable tab. On the other page for two variables, you can calculate the correlations between two attributes and with the support of R shiny, there may be more statistics for further developments.</p>
             
             <p>&nbsp;</p>
