@@ -191,10 +191,13 @@ include 'footer.php';
 echo <<<_TAIL1
 <!-- --------------- Bootstrap Core JavaScript --------------- -->
 <script src="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/JS/jquery.min.js"></script>
+<script src="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/JS/jquery.tablesorter.min.js"></script>
 <!-- <script src="../carousel/js/jquery.js"></script> -->
 <script src="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/JS/bootstrap.js"></script>
 <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
 <script src="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/JS/holder.min.js"></script>
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+
 
 </body>
 </html>
