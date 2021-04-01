@@ -137,10 +137,10 @@ $resrows = mysql_num_rows($result);
 
 // Content 2
 echo <<<_CONTENTS2
-    <h2>“Manufacturer Summary Table”</h2> 
+    <h2>Manufacturer Summary Table</h2> 
 _CONTENTS2;
 
-echo "<table id=\"myTable\" class=\"tablesorter\" width =\"70%\" border=\"2\" cellspacing=\"1\" align=\"center\"><thead><tr>";
+echo "<table id=\"myTable\" class=\"tablesorter\" width =\"100%\" border=\"2\" cellspacing=\"1\" align=\"center\"><thead><tr>";
 for($k = 0 ; $k < sizeof($dbfs) ; ++$k) {
     echo "<th>".$nms[$k]."</th>";
 }
