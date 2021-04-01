@@ -128,7 +128,7 @@ for($j = 0 ; $j < $rows ; ++$j)
     }
 }
 echo '<p class="pstyle" sytle="color: #FFD465;"> <strong> Currently selected Suppliers: </strong>';
-echo $snm[$chosen];
+echo $snm[$chosen-1];
 echo '(Since it takes time to show the multiple large data sets, only the last choice will be displayed)</p>';
 
 // Generate the table for the last choice
