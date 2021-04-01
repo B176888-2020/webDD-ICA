@@ -81,7 +81,7 @@ if(isset($_POST['tgval']) && isset($_POST['tgvalb']))
     }
     $mansel = $mansel.")";
     $comtodo = "./python/correlate3.py ".$dbfs[$chosen]." ".$dbfs[$chosenb]." \"".$mansel."\"";
-    printf(" Correlation for %s (%s) vs %s (%s) <br />\n",$dbfs[$chosen],$nms[$chosen],$dbfs[$chosenb],$nms[$chosenb]);
+    printf(" Correlation for %s (%s) vs %s (%s) <br />\n", $dbfs[$chosen],$nms[$chosen],$dbfs[$chosenb],$nms[$chosenb]);
     $rescor = system($comtodo);
     printf("\n");
 }
