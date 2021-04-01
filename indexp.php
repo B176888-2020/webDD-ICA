@@ -5,19 +5,14 @@ session_start();
 // Judgement for the inputs of user names
 if(isset($_POST['fn']) && isset($_POST['sn'])) {
 
-// --------------- The Shared Part For All Pages: Navbar and HEAD information --------------- //
-// Start the page and ensure the login and redirect method.
-    session_start();
-    require_once 'login.php';
-    include 'redir.php';
-
+ //   --------------- The Shared Part For All Pages: Navbar and HEAD information --------------- //
 // The HEAD information of the website and load the css style
-    echo <<<_HEAD1
+echo <<<_HEAD1
 <html lang="en">
 
 <!-- Metadata and css style for all pages -->
 <head>
-    <title>Help-IDWD-ICA</title>
+    <title>Index-IDWD-ICA</title>
     <!-- Define the Encoding system -->
     <meta charset="utf-8">
     <!-- Bootstrap Core CSS -->
@@ -33,63 +28,15 @@ _HEAD1;
 
 // --------------- The Shared Part For All Pages: Navbar and HEAD information  --------------- //
 
-    $_SESSION['forname'] = $_POST['fn'];
-    $_SESSION['surname'] = $_POST['sn'];
-    $smask =  $_SESSION['supmask'];
-
-    echo <<<_TAIL1
-    <pre>
-       Mask Value $smask
-    </pre>
-    </body>
-</html>
-_TAIL1;
-
-}
-else {
-    // Error Transformation
-    header('location: http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/complib.php');
-}
-?>
-
-
-<?php
-// --------------- The Shared Part For All Pages: Navbar and HEAD information --------------- //
-// Start the page and ensure the login and redirect method.
-session_start();
-require_once 'login.php';
-include 'redir.php';
-
-// The HEAD information of the website and load the css style
-echo <<<_HEAD1
-<html lang="en">
-<!-- Metadata and css style for all pages -->
-<head>
-    <title>Help-IDWD-ICA</title>
-    <!-- Define the Encoding system -->
-    <meta charset="utf-8">
-    <!-- Bootstrap Core CSS -->
-    <link href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/CSS/bootstrap.css" rel="stylesheet">
-    <!-- Customise CSS -->
-    <link href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/CSS/carousel.css" rel="stylesheet">
-</head>
-<body>
-_HEAD1;
-
-// Nav Bar
-include 'menuf.php';
-
-// --------------- The Shared Part For All Pages: Navbar and HEAD information  --------------- //
-
-// --------------- Features for Different Pages: Help Page --------------- //
+    // --------------- Features for Different Pages: Help Page --------------- //
 // Main Content
-echo <<<_CONTENTS1
+    echo <<<_CONTENTS1
 <div class="mycontainer" id="mycontentcon">
   <div class="row">
 
     <div class="col-md-9" id="mycontent">
       <div>
-        <h1 id="overview" class="">Document</h1>
+        <h1 id="overview" class="">IDWD-ICA: A Bootstrap web application for primary analysis of molecular compounds</h1>
         <hr class="col-md-12">
         <h2>Overview</h2> 
         <p>IDWD-ICA (Introduction to web site and database design for drug discovery) is a web application to filter and select the molecular compounds with the requests of chosen suppliers or compound attributes. With the selected data set stored in MySQL database, IDWD-ICA also provides primary statistics analysis and visualisation about the compound attributes and correlations. IDWD-ICA is developed based on the LAMP techniques stack, and techniques from Bootstrap and JQuery also help to make the website more user-friendly. Wish this prototype application can help you in your further research and web development. Further issues and comments can also be provided through the GitHub: <a href="https://github.com/B176888-2020/webDD-ICA">https://github.com/B176888-2020/webDD-ICA</a>. </p>
@@ -135,15 +82,22 @@ echo <<<_CONTENTS1
 _CONTENTS1;
 // --------------- Features for Different Pages: Help Page --------------- //
 
-// --------------- The Shared Part For All Pages: Roll up button, Footer and JavaScirpt Files --------------- //
+    $_SESSION['forname'] = $_POST['fn'];
+    $_SESSION['surname'] = $_POST['sn'];
+    $smask =  $_SESSION['supmask'];
+
+    // --------------- The Shared Part For All Pages: Roll up button, Footer and JavaScirpt Files --------------- //
 // Roll Up Button
-include 'rollbutton.php';
+    include 'rollbutton.php';
 
 // Footer
-include 'footer.php';
+    include 'footer.php';
 
 // Tail for the HTML
-echo <<<_TAIL1
+    echo <<<_TAIL1
+    <pre>
+       Mask Value $smask
+    </pre>
 <!-- --------------- Bootstrap Core JavaScript --------------- -->
 <script src="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/JS/jquery.min.js"></script>
 <!-- <script src="../carousel/js/jquery.js"></script> -->
@@ -155,5 +109,9 @@ echo <<<_TAIL1
 </html>
 _TAIL1;
 
-// --------------- The Shared Part For All Pages: Roll up button, Footer and JavaScirpt Files --------------- //
+}
+else {
+    // Error Transformation
+    header('location: http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/complib.php');
+}
 ?>
