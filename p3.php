@@ -57,8 +57,8 @@ $query = "select * from Manufacturers";
 $result = mysql_query($query);
 if(!$result) die("unable to process query: " . mysql_error());
 $rows = mysql_num_rows($result);
-  $smask = $_SESSION['supmask'];
-  $firstmn = False;
+$smask = $_SESSION['supmask'];
+$firstmn = False;
   $mansel = "(";
   for($j = 0 ; $j < $rows ; ++$j) {
     $row = mysql_fetch_row($result);
@@ -78,10 +78,11 @@ $rows = mysql_num_rows($result);
   $output = base64_encode(shell_exec($comtodo));
   echo <<<_imgput
      <pre>
-     <img  src="data:image/png;base64,$output" />                                               
+     <img  src="data:image/png;base64,$output" />
      </pre>
 _imgput;
 }
+
 
 echo '<form action="p3.php" method="post"><pre>';
 for($j = 0 ; $j <sizeof($dbfs) ; ++$j) {
