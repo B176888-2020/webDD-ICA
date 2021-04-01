@@ -22,7 +22,7 @@ ds = cur.fetchall()
 ads = np.array(ds)
 num_bins = 20
 # the histogram of the data
-n, bins, patches = plt.hist(ads, num_bins, density=0, facecolor='#FFB700', alpha=0.5)
+n, bins, patches = plt.hist(ads, num_bins, density=0, facecolor='blue', alpha=0.5)
 plt.xlabel(xname)
 plt.ylabel('N')
 image = io.BytesIO()
