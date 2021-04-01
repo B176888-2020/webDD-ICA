@@ -12,7 +12,7 @@ echo<<<_HEAD1
 <!-- Metadata and css style for all pages -->
 <head>
     <!-- Title -->
-    <title>Two Variable Correlations</title>
+    <title>IDWD-ICA: Exit</title>
     <!-- Define the Encoding system -->
     <meta charset="utf-8">
     <!-- Bootstrap Core CSS -->

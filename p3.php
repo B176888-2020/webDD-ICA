@@ -12,7 +12,7 @@ echo<<<_HEAD1
 <!-- Metadata and css style for all pages -->
 <head>
     <!-- Title -->
-    <title>One Variable Statistics</title>
+    <title>IDWD-ICA: One Variable Statistics</title>
     <!-- Define the Encoding system -->
     <meta charset="utf-8">
     <!-- Bootstrap Core CSS -->
@@ -36,9 +36,9 @@ echo <<<_CONTENTS1
 
     <div class="col-md-9" id="mycontent">
       <div>
-        <h1 class="">Statistics</h1>
+        <h1 class="">Statistics and Correlation</h1>
         <hr class="col-md-12">
-        <h2>“Plans for the drug administration mode”</h2> 
+        <h2>One Variable Statistics</h2> 
 _CONTENTS1;
 
 // Attributes Array

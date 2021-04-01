@@ -11,6 +11,7 @@ echo <<<_HEAD1
 
 <!-- Metadata and css style for all pages -->
 <head>
+    <title>IDWD-ICA: Help</title>
     <!-- Define the Encoding system -->
     <meta charset="utf-8">
     <!-- Bootstrap Core CSS -->
