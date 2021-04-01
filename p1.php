@@ -92,7 +92,7 @@ for($j = 0 ; $j < $rows ; ++$j)
 }
 echo '</p>';
 
-echo  '<br><pre style="width: 25%;"><form action="p1.php" method="post">';
+echo  '<pre style="width: 25%;"><form action="p1.php" method="post">';
 for($j = 0 ; $j < $rows ; ++$j)
 {
     echo $snm[$j];
@@ -120,7 +120,7 @@ if(!$result) die("unable to process query: " . mysql_error());
 $manrows = mysql_num_rows($result);
 $manarray = array();
 $manid = array();
-$chosen = $_POST['tgval'];
+$chosen = $snm[$j];
 for($j = 0 ; $j < $manrows ; ++$j)
 {
     $row = mysql_fetch_row($result);
