@@ -106,13 +106,8 @@ echo '</pre></form>';
 // Main Content 2
 echo <<<_CONTENTE1
     <p>&nbsp;</p>
-      <h3>References</h3>
-        <p>[1] Sepantafar, Mohammadmajid, et al. “Engineered Hydrogels in Cancer Therapy and Diagnosis.” Trends in Biotechnology 35.11(2017).</p>
-        <p>[2] Park, Semi , et al. "Benefits of Recurrent Colonic Stent Insertion in a Patient with Advanced Gastric Cancer with Carcinomatosis Causing Colonic Obstruction." Yonsei Medical Journal 50.2(2009).</p>
-        <p>[3] English, Max A., et al. "Programmable CRISPR-responsive smart materials." Science 365.6455 (2019): 780-785.</p>
+
       </div>
-
-
       <hr class="col-md-13">
     </div>
   </div>

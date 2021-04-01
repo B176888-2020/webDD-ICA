@@ -34,9 +34,10 @@ echo <<<_CONTENTS1
 
     <div class="col-md-9" id="mycontent">
       <div>
-        <h1 class="">Future Work - Improvement</h1>
+        <h1 class="">Select Suppliers</h1>
         <hr class="col-md-12">
-        <h2>“Plans for the drug administration mode”</h2> 
+        <hr id="options" class="col-md-14">
+        <h2>“Supplier Options”</h2> 
 _CONTENTS1;
 
 
@@ -119,6 +120,7 @@ $manid = array();
 
 // Content 2
 echo <<<_CONTENTS2
+    <hr id="p1table" class="col-md-14">
     <h2>Manufacturer Summary Table</h2> 
 _CONTENTS2;
 for($j = 0 ; $j < $rows ; ++$j)
@@ -164,13 +166,8 @@ echo "</tbody>\n</table>\n";
 // Main Content 2
 echo <<<_CONTENTE1
     <p>&nbsp;</p>
-      <h3>References</h3>
-        <p>[1] Sepantafar, Mohammadmajid, et al. “Engineered Hydrogels in Cancer Therapy and Diagnosis.” Trends in Biotechnology 35.11(2017).</p>
-        <p>[2] Park, Semi , et al. "Benefits of Recurrent Colonic Stent Insertion in a Patient with Advanced Gastric Cancer with Carcinomatosis Causing Colonic Obstruction." Yonsei Medical Journal 50.2(2009).</p>
-        <p>[3] English, Max A., et al. "Programmable CRISPR-responsive smart materials." Science 365.6455 (2019): 780-785.</p>
-      </div>
 
-
+        </div>
       <hr class="col-md-13">
     </div>
   </div>

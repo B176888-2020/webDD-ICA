@@ -30,8 +30,8 @@ echo <<<_MENU1
                 <span class="caret" style="color: #FFD465;"></span>
               </a>
               <ul class="dropdown-menu" style="min-width:100%;">
-                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p4.php">P4</a></li>
-                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p5.php">P5</a></li>
+                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p1.php#options">Selection</a></li>
+                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p1.php#p1table">Summary Table</a></li>
               </ul>
             </li>
             
@@ -50,24 +50,12 @@ echo <<<_MENU1
             <!-- Show statistics -->
             <li class="dropdown">
               <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p3.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                Statistics
+                Statistics and Correlation
                 <span class="caret" style="color: #FFD465;"></span>
               </a>
               <ul class="dropdown-menu" style="min-width:100%;">
-                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p3.php">Single Variable</a></li>
-                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p4.php">Double Variables</a></li>
-              </ul>
-            </li>
-            
-            <!-- Correlations methods -->
-            <li class="dropdown">
-              <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p4.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                Correlations
-                <span class="caret" style="color: #FFD465;"></span>
-              </a>
-              <ul class="dropdown-menu" style="min-width:100%;">
-                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p4.php">P4</a></li>
-                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p5.php">P5</a></li>
+                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p3.php">One Variable</a></li>
+                <li><a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p4.php">Two Variables</a></li>
               </ul>
             </li>
             
