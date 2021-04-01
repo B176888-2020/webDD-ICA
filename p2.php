@@ -65,7 +65,7 @@ for($j = 0 ; $j < $rows ; ++$j)
   }
 }
 $mansel = $mansel.")";
-setpar = isset($_POST['natmax']);
+$setpar = isset($_POST['natmax']);
 echo <<<_MAIN1
     <pre>
 This is the catalogue retrieval Page
