@@ -70,6 +70,7 @@ include 'footer.php';
 
 // Tail for the HTML
 echo <<<_TAIL1
+</pre>
 <!-- --------------- Bootstrap Core JavaScript --------------- -->
 <script src="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/JS/jquery.min.js"></script>
 <!-- <script src="../carousel/js/jquery.js"></script> -->
