@@ -48,7 +48,7 @@ echo <<<_MENU1
             <!-- Search -->
             <li class="dropdown">
               <a href="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/p5.php" class="dropdown-toggle">
-                Sign out
+                Search
               </a>
             </li>
             
