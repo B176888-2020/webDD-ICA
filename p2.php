@@ -34,11 +34,22 @@ echo <<<_CONTENTS1
 
     <div class="col-md-9" id="mycontent">
       <div>
-        <h1 class="">Future Work - Improvement</h1>
+        <h1 class="">Select Compounds</h1>
         <hr class="col-md-12">
-        <h2>“Plans for the drug administration mode”</h2> 
+        <h2>Check the </h2> 
 _CONTENTS1;
 
+
+// Filter options
+echo <<<_FILTER
+   <form action="p2.php" method="post"><pre>
+       Max Atoms      <input type="text" name="natmax"/>    Min Atoms    <input type="text" name="natmin"/>
+       Max Carbons    <input type="text" name="ncrmax"/>    Min Carbons  <input type="text" name="ncrmin"/>
+       Max Nitrogens  <input type="text" name="nntmax"/>    Min Nitrogens<input type="text" name="nntmin"/>
+       Max Oxygens    <input type="text" name="noxmax"/>    Min Oxygens  <input type="text" name="noxmin"/>
+                   <input type="submit" value="list" />
+</pre></form>
+_FILTER;
 
 $db_server = mysql_connect($db_hostname,$db_username,$db_password);
 if(!$db_server) die("Unable to connect to database: " . mysql_error());
@@ -132,16 +143,7 @@ _TABLESET;
 }
 }
 
-// Filter options
-echo <<<_FILTER
-   <form action="p2.php" method="post"><pre>
-       Max Atoms      <input type="text" name="natmax"/>    Min Atoms    <input type="text" name="natmin"/>
-       Max Carbons    <input type="text" name="ncrmax"/>    Min Carbons  <input type="text" name="ncrmin"/>
-       Max Nitrogens  <input type="text" name="nntmax"/>    Min Nitrogens<input type="text" name="nntmin"/>
-       Max Oxygens    <input type="text" name="noxmax"/>    Min Oxygens  <input type="text" name="noxmin"/>
-                   <input type="submit" value="list" />
-</pre></form>
-_FILTER;
+
 
 // Main Content 2
 echo <<<_CONTENTE1
