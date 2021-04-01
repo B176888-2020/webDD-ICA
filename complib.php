@@ -1,9 +1,6 @@
 <?php
-// --------------- The Shared Part For All Pages: Navbar and HEAD information --------------- //
-// Start the page and ensure the login and redirect method.
 session_start();
 require_once 'login.php';
-include 'redir.php';
 
 // The HEAD information of the website and load the css style
 echo<<<_HEAD1
@@ -27,6 +24,8 @@ _HEAD1;
 include 'menuf.php';
 
 // --------------- The Shared Part For All Pages: Navbar and HEAD information  --------------- //
+
+
 
 $db_server = mysql_connect($db_hostname,$db_username,$db_password);
 if(!$db_server) die("Unable to connect to database: " . mysql_error());
@@ -71,9 +70,17 @@ include 'footer.php';
 // Tail for the HTML
 echo <<<_TAIL1
 </pre>
-<!-- --------------- Bootstrap Core JavaScript --------------- -->
+<!-- --------------- JQuery--------------- -->
 <script src="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/JS/jquery.min.js"></script>
-<!-- <script src="../carousel/js/jquery.js"></script> -->
+<!-- --------------- JQuery tablesorter--------------- -->
+<script src="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/JS/jquery.tablesorter.min.js"></script>
+<script type="text/javascript">
+$(function() {
+  $("#myTable").tablesorter();
+});
+</script>
+
+<!-- ---------------Bootstrap--------------- -->
 <script src="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/JS/bootstrap.js"></script>
 <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
 <script src="http://mscidwd.bch.ed.ac.uk/s2059232/webDD-ICA/JS/holder.min.js"></script>
@@ -83,5 +90,6 @@ echo <<<_TAIL1
 _TAIL1;
 
 // --------------- The Shared Part For All Pages: Roll up button, Footer and JavaScirpt Files --------------- //
+
 
 ?>
