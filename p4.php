@@ -27,6 +27,18 @@ include 'menuf.php';
 // --------------- The Shared Part For All Pages: Navbar and HEAD information  --------------- //
 
 // --------------- Features for Different Pages: Correlation --------------- //
+// Main Content 1
+echo <<<_CONTENTS1
+<div class="mycontainer" id="mycontentcon">
+  <div class="row">
+
+    <div class="col-md-9" id="mycontent">
+      <div>
+        <h1 class="">Correlation</h1>
+        <hr class="col-md-12">
+        <h2>“Plans for the drug administration mode”</h2> 
+_CONTENTS1;
+
 // Attributes Array
 $dbfs = array("natm","ncar","nnit","noxy","nsul","ncycl","nhdon","nhacc","nrotb","mw","TPSA","XLogP");
 $nms = array("n atoms","n carbons","n nitrogens","n oxygens","n sulphurs","n cycles","n H donors","n H acceptors","n rot bonds","mol wt","TPSA","XLogP");
@@ -88,7 +100,22 @@ for($j = 0 ; $j <sizeof($dbfs) ; ++$j) {
 echo '<input type="submit" value="OK" />';
 echo '</pre></form>';
 
+// Main Content 2
+echo <<<_CONTENTE1
+    <p>&nbsp;</p>
+      <h3>References</h3>
+        <p>[1] Sepantafar, Mohammadmajid, et al. “Engineered Hydrogels in Cancer Therapy and Diagnosis.” Trends in Biotechnology 35.11(2017).</p>
+        <p>[2] Park, Semi , et al. "Benefits of Recurrent Colonic Stent Insertion in a Patient with Advanced Gastric Cancer with Carcinomatosis Causing Colonic Obstruction." Yonsei Medical Journal 50.2(2009).</p>
+        <p>[3] English, Max A., et al. "Programmable CRISPR-responsive smart materials." Science 365.6455 (2019): 780-785.</p>
+      </div>
 
+
+      <hr class="col-md-13">
+    </div>
+  </div>
+</div>
+</div>
+_CONTENTE1;
 
 // --------------- Features for Different Pages: Correlation --------------- //
 
